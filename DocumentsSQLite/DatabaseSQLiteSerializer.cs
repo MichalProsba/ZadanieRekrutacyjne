@@ -25,7 +25,7 @@ namespace DocumentsSQLite
             var LineNumber = 0;
             var separator = ';';
             var BufforList = new List<DocumentItem>[2000];
-            using (StreamReader reader = new StreamReader(@"DocumentItems.csv"))
+            using (StreamReader reader = new StreamReader(@"../../../DocumentItems.csv"))
             {
                 while (!reader.EndOfStream)
                 {
@@ -70,7 +70,7 @@ namespace DocumentsSQLite
             var LineNumber = 0;
             var separator = ';';
             var DocumentsList = new List<Document>();
-            using (StreamReader reader = new StreamReader(@"Documents.csv"))
+            using (StreamReader reader = new StreamReader(@"../../../Documents.csv"))
             {
                 while (!reader.EndOfStream)
                 {
